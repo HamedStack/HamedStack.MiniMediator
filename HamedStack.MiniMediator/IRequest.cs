@@ -1,7 +1,6 @@
 ﻿namespace HamedStack.MiniMediator;
 
 /// <summary>
-/// Represents a request that returns a response.
+/// Marker interface for requests that do not return a response.
 /// </summary>
-/// <typeparam name="TResponse">The type of response.</typeparam>
-public interface IRequest<out TResponse> { }
+public interface IRequest : IBaseRequest;
